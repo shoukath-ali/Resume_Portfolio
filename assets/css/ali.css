@@ -54,9 +54,9 @@ body {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #c3c1a8;
   text-align: left;
-  background-color: #fff;
+  background-color: #00120B;
 }
 
 [tabindex="-1"]:focus {
@@ -4482,7 +4482,7 @@ input[type="button"].btn-block {
 }
 
 .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-  border-color: #eaf0fc #eaf0fc #dee2e6;
+  border-color: #F85C70;
 }
 
 .nav-tabs .nav-link.disabled {
@@ -5043,7 +5043,7 @@ input[type="button"].btn-block {
           flex-direction: column;
   min-width: 0;
   word-wrap: break-word;
-  background-color: #fff;
+  background-color: #00120B;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0;
@@ -7129,7 +7129,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #F85C70 !important;
+  background-color: #D81E5B !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -7199,7 +7199,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #D81E5B !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -7209,7 +7209,7 @@ button.bg-dark:focus {
 }
 
 .bg-white {
-  background-color: #fff !important;
+  background-color: #00120B !important;
 }
 
 .bg-transparent {
@@ -10955,7 +10955,7 @@ a.text-dark:hover, a.text-dark:focus {
 p {
   font-size: calc(13px + (14 - 13) * ((100vw - 300px) / (1300 - 300)));
   opacity: .8;
-  color: #444;
+  color: #FFF9EC;
 }
 
 .title {
@@ -10986,7 +10986,7 @@ p {
 .info span {
   font-weight: 600;
   font-size: 14px;
-  color: #343a40;
+  color: #FFF9EC;
 }
 
 .line {
@@ -11170,7 +11170,7 @@ p {
       -ms-flex-preferred-size: 0;
           flex-basis: 0;
   display: block;
-  color: #212529;
+  color: #F0A202;
   font-size: 13px;
   font-weight: 500;
   opacity: .7;
@@ -11412,7 +11412,7 @@ pre .code {
 }
 
 .navbar .nav-link.active {
-  color: #F85C70 !important;
+  color: #F0A202 !important;
 }
 
 .navbar .brand {
@@ -11449,7 +11449,7 @@ pre .code {
 
 .navbar .brand .brand-txt .brand-subtitle {
   font-size: 13px;
-  color: #888;
+  color: #F0A202;
 }
 
 @media (max-width: 991.98px) {
@@ -11508,8 +11508,8 @@ pre .code {
   position: relative;
   height: 80vh;
   min-height: 600px;
-  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../imgs/header.jpg);
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../imgs/display.png);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../imgs/display.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -11659,6 +11659,8 @@ pre .code {
   top: 0;
   width: 100%;
   height: 100%;
+  background-image: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../imgs/header.jpg);
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(../imgs/header.jpg);
 }
 
 .contact .contact-form-card,
