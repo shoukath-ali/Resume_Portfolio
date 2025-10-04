@@ -11,10 +11,6 @@
     gtag('config', 'G-L7NZD6VCG4');
     </script>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="scripts/main.js"></script>
-
-	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Shoukath Ali's Portfolio">
     <meta name="author" content="ali">
@@ -23,6 +19,10 @@
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <!-- Bootstrap + ali main styles -->
 	<link rel="stylesheet" href="assets/css/ali.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/css/overrides.css">
 </head>
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
     <a href="https://www.linkedin.com/in/shoukath-ali-b6650576/" class="btn btn-primary btn-component" data-spy="affix" data-offset-top="600"><i class="ti-shift-left-alt"></i> LinkedIn --:></a>
@@ -36,14 +36,17 @@
                 <li class="social-item"><a class="social-link text-light" href="https://github.com/shoukath-ali"><i class="ti-github" aria-hidden="true"></i></a></li>
                 <li class="social-item"><a class="social-link text-light" href="https://medium.com/@heyshoukath"><i class="ti-notepad" aria-hidden="true"></i></a></li>
                 <li class="social-item"><a class="social-link text-light" href ="mailto:tech@shoukath.me"><i class="ti-google" aria-hidden="true"></i></a></li>
-                <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/_mr.stardom_"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                <!-- <li class="social-item"><a class="social-link text-light" href="https://www.instagram.com/_mr.stardom_"><i class="ti-instagram" aria-hidden="true"></i></a></li> -->
                 <!-- <li class="social-item"><a class="social-link text-light" href="#"><i class="ti-Medium" aria-hidden="true"></i></a></li> -->
             </ul>  
-            <div class="header-content">
+            <div class="header-content reveal">
                 <h4 class="header-subtitle" >Hello, I am</h4>
                 <h1 class="header-title">Shoukath Ali</h1>
-                <h6 class="header-mono" >Data Science | Data Engineer | Gen AI </h6>
-                <!-- <a href="https://www.icloud.com/iclouddrive/038jZwUrpy5AtWq9_KmODTU8g#Shoukath_CV", target="_blank"><button class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Resume</button></a> -->
+                <h6 class="header-mono" >AI/Data/Software — building reliable ML and scalable systems</h6>
+                <div class="mt-12 gap-12 flex-wrap flex">
+                    <a href="https://drive.google.com/file/d/1H5eJPuSXoCyaX7UPI36uOjdAxIZ24Esa/view?usp=sharing" class="btn btn-primary" download><i class="ti-download pr-2"></i>Download Resume</a>
+                    <a href="mailto:tech@shoukath.me" class="btn btn-outline-danger">Email Me</a>
+                </div>
             </div>
         </div>
     </header>
@@ -81,21 +84,16 @@
                     <li class="nav-item last-item">
                         <a href="#contact" class="nav-link">Contact</a>
                     </li>
+                    <li class="nav-item ml-8">
+                        <a href="https://drive.google.com/file/d/1H5eJPuSXoCyaX7UPI36uOjdAxIZ24Esa/view?usp=sharing" class="btn btn-primary nav-resume-btn" download>Download Resume</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="container-fluid">
         <div id="about" class="row about-section">
-            <!-- <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Who am I ?</h3>
-                <span class="line mb-5"></span>
-                <h5 class="mb-3">Self-motivated Data Science student looking for a Full time position in an organization, where I can start gaining real world challenges,and experience business, technology, finance and development skills to support growth and success. I would love to explore and experience data roles.</h5>
-                <p class="mt-20">Fun Fact: From city of destiny.</p>
-                <p class="mt-20">Nature lover (My beautiful University, has it all)</p>
-                <p class="mt-20">Love swimming in the midst of Natural Flow</p>
-                <a href="https://www.icloud.com/iclouddrive/038jZwUrpy5AtWq9_KmODTU8g#Shoukath_CV" , target="_blank"><button class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</button></a>
-            </div> -->
+            
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">Who am I?</h3>
                 <span class="line mb-5"></span>
@@ -145,7 +143,7 @@
                 </div>
             
                 <div class="cta-button mt-4">
-                    <a href="https://www.icloud.com/iclouddrive/038jZwUrpy5AtWq9_KmODTU8g#Shoukath_CV" target="_blank">
+                    <a href="https://drive.google.com/file/d/1H5eJPuSXoCyaX7UPI36uOjdAxIZ24Esa/view?usp=sharing" target="_blank">
                         <button class="btn btn-outline-danger">
                             <i class="ti-download mr-2"></i>Download CV
                         </button>
@@ -173,7 +171,7 @@
                         <div class="info-item mb-3">
                             <i class="ti-email text-primary"></i>
                             <span class="label">Email:</span>
-                            <a href="mailto:tech@shoukath.me" class="value">tech@shoukath.me</a>
+                            <a href="mailto:heyshoukath@gmail.com" class="value">heyshoukath@gmail.com</a>
                         </div>
                         
                         <div class="info-item mb-3">
@@ -196,7 +194,7 @@
             
                         <div class="info-item mb-3">
                             <i class="ti-calendar text-primary"></i>
-                            <span class="label">Experience:</span>
+                            <span class="label">Global Experience:</span>
                             <span class="value">3 Years</span>
                         </div>
                     </div>
@@ -214,7 +212,7 @@
                             <a href="https://medium.com/@heyshoukath" class="social-icon" target="_blank">
                                 <i class="ti-notepad"></i>
                             </a>
-                            <a href="mailto:tech@shoukath.me" class="social-icon">
+                            <a href="mailto:heyshoukath@gmail.com" class="social-icon">
                                 <i class="ti-email"></i>
                             </a>
                         </div>
@@ -285,53 +283,8 @@
             </style>
 
             
-            <!-- <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">Personal Info</h3>
-                <span class="line mb-5"></span>
-                <ul class="mt40 info list-unstyled">
-                    <li><span>Birthdate</span> : 11/19/2000</li>
-                    <li><span>Email</span> : tech@shoukath.me </li>
-                    <li><span>Phone</span> : +1 (930) 444-0530</li>
-                    <li><span>Skype</span> : Shoukath </li>
-                    <li><span>Location</span> :  United States of America 🇺🇸 </li>
-                </ul>
-                <ul class="social-icons pt-3">
-                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/shoukath-ali-b6650576/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://medium.com/@heyshoukath"><i class="ti-notepad" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href ="mailto:tech@shoukath.me"><i class="ti-google" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://www.instagram.com/_mr.stardom_"><i class="ti-instagram" aria-hidden="true"></i></a></li>
-                    <li class="social-item"><a class="social-link" href="https://github.com/shoukath-ali"><i class="ti-github" aria-hidden="true"></i></a></li>
-                </ul>  
-            </div> -->
-            <!-- <div class="col-lg-4 about-card">
-                <h3 class="font-weight-light">My Expertise</h3>
-                <span class="line mb-5"></span>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-widget icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Data Engineer</h6>
-                        <p class="subtitle"> Self learnt in-dept big data engineer</p>
-                        <p class="subtitle"> I design and write blogs on multiple architecture perspectives <br> Currently gaining espertise in cloud environment -- Azure</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-stats-up icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Data Science / Analytics</h6>
-                        <p class="subtitle"> 2+ years of experience in handling data science and machine learning projects, in the vast domains</p>
-                        <hr>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-1 text-danger pt-1"><i class="ti-paint-bucket icon-lg"></i></div>
-                    <div class="col-10 ml-auto mr-3">
-                        <h6>Software Engineer</h6>
-                        <p class="subtitle">Able to build and deploy end-to-end applications (Websites, Products, Services) <br> Engineered GenAI application, in Oracle LLM, able to understand the system architectures. <i>(Certified Oracle GenAI Professional)</i></p>
-                        <hr>
-                    </div>
-                </div>
-            </div> -->
+            
+            
             <div class="col-lg-4 about-card">
                 <h3 class="font-weight-light">My Expertise</h3>
                 <span class="line mb-5"></span>
@@ -426,14 +379,18 @@
                         </div>
                         <div class="card-body">
                             <h6 class="title text-danger">June 2024 - August 2024</h6>
+                            <P>AI Engineer (Data Science) Intern</P>
+                            <P class="subtitle">Developed, trained and deployed an AI-powered recommendation system using data pipeline, collaborative filtering and vector search to enhance business operations and revenue.</P>
+                            <hr>
+                            <h6 class="title text-danger">June 2024 - August 2024</h6>
                             <P>Data Engineer - GenAI Intern</P>
                             <P class="subtitle">Created web scraping algorithms and ETL pipelines; integrated LLMs for product data extraction and advertisement generation.</P>
                             <hr>
-                            <h6 class="title text-danger">2022 - June 2023</h6>
+                            <h6 class="title text-danger">November 2022 - June 2023</h6>
                             <P>Software Engineer - Data and Artificial Intelligence </P>
                             <P class="subtitle">Led AI implementation and research on multiclass classification and time series forecasting, boosting operational efficiency by 30% through successful deployment.</P>
                             <hr>
-                            <h6 class="title text-danger">June 2021 - 2022</h6>
+                            <h6 class="title text-danger">June 2021 - 2022 July</h6>
                             <P>Associate Developer - Data Analytics</P>
                             <P class="subtitle">Developed ZeroShotBot AI chatbot with NLP and pre-trained LLMs, enhancing scaling capabilities and data processing efficiency by 30%.</P>
                         </div>
@@ -455,32 +412,35 @@
                             <hr>
                             <h6 class="title text-danger">2017 - 2021</h6>
                             <P>Bachelors in Computer Science and Engineering</P>
-                            <P class="subtitle">National Institute of Technology.</P>
+                            <P class="subtitle">National Institute of Technology, Patna</P>
                             <hr>
                         </div>
                     </div>
                     <div class="card">
-                        <div class="card-header">
-                             <div class="pull-left">
-                                 <h4 class="mt-2">Languages</h4>
-                                 <span class="line"></span>  
-                             </div>
-                         </div>
-                         <div class="card-body pb-2">
-                            <h6>English</h6>
-                             <div class="progress mb-3">
-                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                             </div>
-                             <h6>Hindi / Telugu</h6>
-                             <div class="progress mb-3">
-                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                             </div>
-                             <h6>Spanish</h6>
-                             <div class="progress mb-3">
-                                 <div class="progress-bar bg-danger" role="progressbar" style="width: 20%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                             </div>
-                         </div>
-                     </div>
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Activities</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <h6>Hobbies</h6>
+                            <div class="skill-badges mb-10">
+                                <span class="logo-label">Hiking</span>
+                                <span class="logo-label">Swimming</span>
+                                <a class="logo-label" href="https://medium.com/@heyshoukath" target="_blank" rel="noopener">Blogging</a>
+                                <span class="logo-label">AI Products</span>
+                            </div>
+                            <h6>Clubs</h6>
+                            <div class="skill-badges">
+                                <span class="logo-label">Data Science</span>
+                                <span class="logo-label">Art of Living</span>
+                                <span class="logo-label">ACM - SCIMOD</span>
+                                <span class="logo-label">GCP Developer Club</span>
+                                <span class="logo-label">Residential Life Member</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-lg-4">
@@ -492,37 +452,75 @@
                             </div>
                         </div>
                         <div class="card-body pb-2">
-                           <h6>Python</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 97%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>SQL</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Big Data - Pyspark</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>GenAI - Large language models</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Machine learning</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Web development and/or Data collection -- scraping</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Orchestration Tools</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 70%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                            <h6>Cloud services</h6>
-                            <div class="progress mb-3">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            <div class="skills-grid">
+                                <div class="skill-card">
+                                    <div class="skill-title"><i class="ti-code"></i> Programming Languages</div>
+                                    <div class="brand-logos">
+                                        <img src="assets/logos/python.svg" alt="Python" title="Python" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/cplusplus.svg" alt="C++" title="C++" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/r.svg" alt="R" title="R" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/apachespark.svg" alt="PySpark" title="PySpark" width="24" height="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-title"><i class="ti-server"></i> Database Mgmt & Data Formats</div>
+                                    <div class="brand-logos">
+                                        <img src="assets/logos/postgresql.svg" alt="PostgreSQL" title="PostgreSQL" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/mysql.svg" alt="MySQL" title="MySQL" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/snowflake.svg" alt="Snowflake" title="Snowflake" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/mongodb.svg" alt="MongoDB" title="MongoDB" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/neo4j.svg" alt="Neo4j" title="Neo4j" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/avro.svg" alt="Avro" title="Avro" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/json.svg" alt="JSON" title="JSON" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/databricks.svg" alt="Delta Live Tables (Databricks)" title="Delta Live Tables (Databricks)" width="24" height="24" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="skill-badges mt-6">
+                                        <span class="logo-label">SQL</span>
+                                        <span class="logo-label">Parquet</span>
+                                        <span class="logo-label">Delta</span>
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-title"><i class="ti-panel"></i> Software Development</div>
+                                    <div class="brand-logos">
+                                        <img class="logo-mono" src="assets/logos/flask.svg" alt="Flask" title="Flask" width="24" height="24" loading="lazy" decoding="async">
+                                        <img class="logo-mono" src="assets/logos/fastapi.svg" alt="FastAPI" title="FastAPI" width="24" height="24" loading="lazy" decoding="async">
+                                        <img class="logo-mono" src="assets/logos/github.svg" alt="GitHub" title="GitHub" width="24" height="24" loading="lazy" decoding="async">
+                                        <img class="logo-mono" src="assets/logos/githubactions.svg" alt="GitHub Actions" title="GitHub Actions" width="24" height="24" loading="lazy" decoding="async">
+                                        <img class="logo-mono" src="assets/logos/istio.svg" alt="Microservices (Istio)" title="Microservices (Istio)" width="24" height="24" loading="lazy" decoding="async">
+                                        <img class="logo-mono" src="assets/logos/jira.svg" alt="Jira" title="Jira" width="24" height="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+                                <div class="skill-card">
+                                    <div class="skill-title"><i class="ti-cloud"></i> Cloud & Data Engineering</div>
+                                    <div class="brand-logos">
+                                        <img src="assets/logos/aws.svg" alt="AWS" title="AWS" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/googlecloud.svg" alt="Google Cloud" title="Google Cloud" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/azure.svg" alt="Azure" title="Azure" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/docker.svg" alt="Docker" title="Docker" width="24" height="24" loading="lazy" decoding="async">
+                                        <img class="logo-mono" src="assets/logos/apacheairflow.svg" alt="Apache Airflow" title="Apache Airflow" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/databricks.svg" alt="Databricks" title="Databricks" width="24" height="24" loading="lazy" decoding="async">
+                                    </div>
+                                </div>
+
+                                <div class="skill-card">
+                                    <div class="skill-title"><i class="ti-stats-up"></i> AI / ML</div>
+                                    <div class="brand-logos">
+                                        <img class="logo-mono" src="assets/logos/openai.svg" alt="OpenAI" title="OpenAI" width="24" height="24" loading="lazy" decoding="async">
+                                        <img class="logo-mono" src="assets/logos/langchain.svg" alt="LangChain" title="LangChain" width="24" height="24" loading="lazy" decoding="async">
+                                        <img class="logo-mono" src="assets/logos/pinecone.svg" alt="Pinecone" title="Pinecone" width="24" height="24" loading="lazy" decoding="async">
+                                        <img class="logo-mono" src="assets/logos/qdrant.svg" alt="Qdrant" title="Qdrant" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/pytorch.svg" alt="PyTorch" title="PyTorch" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/tensorflow.svg" alt="TensorFlow" title="TensorFlow" width="24" height="24" loading="lazy" decoding="async">
+                                        <img src="assets/logos/fastai.svg" alt="fastai" title="fastai" width="24" height="24" loading="lazy" decoding="async">
+                                    </div>
+                                    <div class="skill-badges mt-6">
+                                        <span class="logo-label">LLM</span>
+                                        <span class="logo-label">Prompt Engineering</span>
+                                        <span class="logo-label">RAG</span>
+                                        <span class="logo-label">FAISS</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -564,7 +562,7 @@
                             <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">40+</h1>
+                            <h1 class="text-danger font-weight-bold font40">20+</h1>
                             <p class="text-light mb-1">Accomplishments</p>
                         </div>
                     </div>
@@ -575,7 +573,7 @@
                             <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
                         </div>
                         <div class="col-7 text-left py-3">
-                            <h1 class="text-danger font-weight-bold font40">2k+</h1>
+                            <h1 class="text-danger font-weight-bold font40">3k+</h1>
                             <p class="text-light mb-1">Network == Networth</p>
                         </div>
                     </div>
@@ -621,17 +619,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
-                    <div class="card mb-5">
-                       <div class="card-header has-icon">
-                            <i class="ti-vector text-danger" aria-hidden="true"></i>
-                        </div>
-                        <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">SAS BI</h5>
-                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="789b968f-a12f-4cb1-aed1-fed37ed98c71" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
-                        </div>
-                    </div>
-                </div>
+
                 <div class="col-md-4 col-sm-6">
                     <div class="card mb-5">
                        <div class="card-header has-icon">
@@ -660,8 +648,25 @@
                             <i class="ti-stats-up text-danger" aria-hidden="true"></i>
                         </div>
                         <div class="card-body px-4 py-3">
-                            <h5 class="mb-3 card-title text-dark">Azure Data Engineer</h5>
-                            <p>Upcoming stay tunned!!</p>
+                            <h5 class="mb-3 card-title text-dark">Databricks</h5>
+                            <div class="skill-badges gap-8">
+                                <a class="logo-label" href="https://credentials.databricks.com/9d852b28-18c4-42ef-b73a-64c753f20eea#acc.EkbMgDHG" target="_blank" rel="noopener">GCP Databricks Platform Architect</a>
+                                <a class="logo-label" href="https://credentials.databricks.com/7154dcdf-9070-4a95-9589-f0bc42a763f3#acc.DI9qMcTd" target="_blank" rel="noopener">Azure Databricks Platform Architect</a>
+                                <a class="logo-label" href="https://credentials.databricks.com/d66f6b0a-abe4-4631-9329-4637656164aa#acc.7xLMfelK" target="_blank" rel="noopener">AWS Databricks Platform Architect</a>
+                                <a class="logo-label" href="https://credentials.databricks.com/ec815eb3-b9ae-489f-8c53-b9f2637e3f72#acc.rTHjExbP" target="_blank" rel="noopener">Databricks Generative AI Fundamentals</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-vector text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">SAS BI</h5>
+                            <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="789b968f-a12f-4cb1-aed1-fed37ed98c71" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="https://cdn.credly.com/assets/utilities/embed.js"></script>
                         </div>
                     </div>
                 </div>
@@ -744,12 +749,7 @@
             </div>
         </div>
     </section> -->
-    <section class="section bg-white py-5">
-        <div class="container text-center">
-            <h2 class="text-light mb-5 font-weight-normal">I'm available for full time roles</h2>
-            <a href="#contact "><button class="btn bg-primary w-lg" >Connect!</button></a>
-        </div>
-    </section>
+    <!-- Availability callout removed per request -->
 
     <!-- Portfolio Section bg-custom-gray" -->
     <section class="section bg-white" id="portfolio">
@@ -1035,7 +1035,7 @@
                                 <input class="form-control" name="email" type="email" placeholder="Email *" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" name="message" id=" placeholder="Message *" rows="7" required></textarea>
+                                <textarea class="form-control" name="message" id="message" placeholder="Message *" rows="7" required></textarea>
                             </div>
                             <div class="form-group ">
                                 <button type="submit" class="form-control btn btn-primary" >Send Message</button>
@@ -1068,14 +1068,14 @@
                                 <i class="ti-envelope icon-md"></i>
                             </div>
                             <div class="col-10">
-                                <h6 class="d-inline">Email :<br> <a href="mailto:tech@shoukath.me"><span class="text-muted">tech@shoukath.me</span></h6></a>
+                                <h6 class="d-inline">Email :<br> <a href="mailto:heyshoukath@gmail.com"><span class="text-muted">heyshoukath@gmail.com</span></h6></a>
                             </div>
                         </div>
                         <ul class="social-icons pt-4">
                             <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/shoukath-ali-b6650576/"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
                             <li class="social-item"><a class="social-link text-dark" href="https://medium.com/@heyshoukath"><i class="ti-notepad" aria-hidden="true"></i></a></li>
                             <li class="social-item"><a class="social-link text-dark" href="mailto:tech@shoukath.me"><i class="ti-google" aria-hidden="true"></i></a></li>
-                            <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/_mr.stardom_"><i class="ti-instagram" aria-hidden="true"></i></a></li>
+                            <!-- <li class="social-item"><a class="social-link text-dark" href="https://www.instagram.com/_mr.stardom_"><i class="ti-instagram" aria-hidden="true"></i></a></li> -->
                             <li class="social-item"><a class="social-link text-dark" href="https://github.com/shoukath-ali"><i class="ti-github" aria-hidden="true"></i></a></li>
                         </ul> 
                     </div>
@@ -1107,6 +1107,55 @@
 
     <!-- ali js -->
     <script src="assets/js/ali.js"></script>
+    <script>
+      // Replace broken/missing logos with a compact text fallback (e.g., "AWS", "GCP")
+      (function(){
+        function acronymFrom(text){
+          if(!text) return 'Logo';
+          var t = text.trim();
+          // If contains spaces, take first letters of up to 3 words
+          if(t.includes(' ')){
+            return t.split(/\s+/).slice(0,3).map(function(w){ return w[0]; }).join('').toUpperCase();
+          }
+          // Else, build from capitals in CamelCase (e.g., FastAPI -> FAP)
+          var caps = (t.match(/[A-Z]/g) || []);
+          if(caps.length >= 2) return (caps[0] + caps[1] + (caps[2] || '')).toUpperCase();
+          // Fallback: first 3 chars
+          return t.slice(0,3).toUpperCase();
+        }
+
+        function replaceWithFallback(img){
+          if(!img || !img.parentNode) return;
+          var label = (img.getAttribute('alt') || img.getAttribute('title') || 'Logo').trim();
+          var span = document.createElement('span');
+          span.className = 'logo-label';
+          span.title = label;
+          span.textContent = label;
+          img.parentNode.replaceChild(span, img);
+        }
+
+        function handle(img){
+          img.addEventListener('error', function(){ replaceWithFallback(img); }, { once: true });
+          // If it already failed loading before this script attached
+          if(img.complete && (img.naturalWidth === 0 || img.naturalHeight === 0)){
+            replaceWithFallback(img);
+          }
+        }
+
+        var images = document.querySelectorAll('.brand-logos img');
+        images.forEach(handle);
+      })();
+    </script>
+    <script>
+      (function(){
+        var elements = document.querySelectorAll('.reveal');
+        if (!('IntersectionObserver' in window)) { elements.forEach(function(el){ el.classList.add('is-visible'); }); return; }
+        var observer = new IntersectionObserver(function(entries){
+          entries.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('is-visible'); observer.unobserve(e.target); } });
+        }, { threshold: 0.1 });
+        elements.forEach(function(el){ observer.observe(el); });
+      })();
+    </script>
     <script>
         var form = document.getElementById("form");
         
