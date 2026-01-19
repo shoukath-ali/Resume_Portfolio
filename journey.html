@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-L7NZD6VCG4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-L7NZD6VCG4');
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Shoukath Ali - Architecture Discussions & Journey">
+    <meta name="author" content="Shoukath Ali">
+    <title>Journey & Architectures | Shoukath Ali</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + ali main styles -->
+    <link rel="stylesheet" href="assets/css/ali.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/overrides.css">
+    <style>
+        .journey-header {
+            background: linear-gradient(135deg, #0d0d0d 0%, #1a1a2e 50%, #16213e 100%);
+            padding: 100px 0 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .journey-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(220, 53, 69, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(220, 53, 69, 0.08) 0%, transparent 40%);
+            pointer-events: none;
+        }
+        .journey-header h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .journey-header .subtitle {
+            color: #a0a0a0;
+            font-size: 1.1rem;
+            max-width: 600px;
+        }
+        .back-link {
+            color: #dc3545;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 2rem;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            color: #fff;
+            transform: translateX(-5px);
+        }
+        
+        /* Timeline Styles */
+        .timeline-section {
+            padding: 80px 0;
+            background: #0a0a0a;
+        }
+        .section-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: #dc3545;
+        }
+        
+        .timeline {
+            position: relative;
+            padding: 20px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: linear-gradient(to bottom, #dc3545, #1a1a2e);
+        }
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 40px;
+            position: relative;
+            margin-bottom: 50px;
+            width: 50%;
+        }
+        .timeline-item:nth-child(even) {
+            justify-content: flex-start;
+            padding-left: 40px;
+            padding-right: 0;
+            margin-left: 50%;
+        }
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            right: -8px;
+            top: 20px;
+            width: 16px;
+            height: 16px;
+            background: #dc3545;
+            border-radius: 50%;
+            border: 3px solid #0a0a0a;
+        }
+        .timeline-item:nth-child(even)::after {
+            left: -8px;
+            right: auto;
+        }
+        .timeline-content {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 12px;
+            padding: 25px;
+            max-width: 450px;
+            transition: all 0.3s ease;
+        }
+        .timeline-content:hover {
+            border-color: #dc3545;
+            transform: translateY(-5px);
+        }
+        .timeline-date {
+            color: #dc3545;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+        .timeline-title {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            margin-bottom: 5px;
+        }
+        .timeline-company {
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 12px;
+        }
+        .timeline-desc {
+            color: #a0a0a0;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+        
+        /* Architecture Cards */
+        .architecture-section {
+            padding: 80px 0;
+            background: linear-gradient(180deg, #0a0a0a 0%, #111 100%);
+        }
+        .arch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+        }
+        .arch-card {
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            border-radius: 16px;
+            padding: 30px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .arch-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #dc3545, #ff6b6b);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        .arch-card:hover {
+            border-color: #333;
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .arch-card:hover::before {
+            transform: scaleX(1);
+        }
+        .arch-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #dc3545, #ff6b6b);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .arch-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+        .arch-card p {
+            color: #888;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+        .arch-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .arch-tag {
+            background: #1a1a1a;
+            color: #dc3545;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            border: 1px solid #2a2a2a;
+        }
+        
+        /* Insights Section */
+        .insights-section {
+            padding: 80px 0;
+            background: #0a0a0a;
+        }
+        .insight-card {
+            background: linear-gradient(135deg, #111 0%, #0d0d0d 100%);
+            border: 1px solid #1a1a1a;
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .insight-card .quote-icon {
+            font-size: 3rem;
+            color: #dc3545;
+            opacity: 0.3;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+        .insight-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+        .insight-card p {
+            color: #a0a0a0;
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .cta-section p {
+            color: #a0a0a0;
+            max-width: 500px;
+            margin: 0 auto 2rem;
+        }
+        
+        /* Footer */
+        .journey-footer {
+            background: #050505;
+            padding: 40px 0;
+            text-align: center;
+            border-top: 1px solid #1a1a1a;
+        }
+        .journey-footer p {
+            color: #666;
+            margin: 0;
+        }
+        .journey-footer a {
+            color: #dc3545;
+        }
+        
+        /* Story Section */
+        .story-section {
+            padding: 80px 0;
+            background: linear-gradient(180deg, #0d0d0d 0%, #080808 100%);
+        }
+        .story-content {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        .story-intro {
+            margin-bottom: 50px;
+            text-align: center;
+            padding: 35px 40px;
+            background: linear-gradient(135deg, rgba(220, 53, 69, 0.06) 0%, rgba(20, 20, 20, 0.8) 100%);
+            border-radius: 16px;
+            border: 1px solid rgba(220, 53, 69, 0.15);
+        }
+        .lead-text {
+            font-size: 1.35rem;
+            line-height: 1.8;
+            color: #d0d0d0;
+            font-weight: 400;
+        }
+        .lead-text .highlight {
+            color: #dc3545;
+            font-weight: 600;
+        }
+        
+        /* Clean story blocks */
+        .story-timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+        
+        .story-block {
+            background: #0f0f0f;
+            border: 1px solid #1a1a1a;
+            border-radius: 12px;
+            padding: 28px 30px;
+            transition: all 0.3s ease;
+        }
+        .story-block:hover {
+            border-color: #dc3545;
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .story-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        
+        .story-chapter {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #dc3545, #ff6b6b);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            flex-shrink: 0;
+        }
+        .story-chapter i {
+            color: #fff !important;
+        }
+        
+        .story-meta {
+            flex: 1;
+        }
+        .story-number {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            color: #dc3545;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+        }
+        .story-meta h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.25rem;
+            margin: 0;
+            color: #fff;
+        }
+        
+        .story-text {
+            padding-left: 64px;
+        }
+        .story-text p {
+            color: #a0a0a0;
+            font-size: 1rem;
+            line-height: 1.85;
+            margin: 0;
+        }
+        .story-text strong {
+            color: #e8e8e8;
+            font-weight: 600;
+        }
+        .story-text .metric {
+            color: #dc3545;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+        .story-text .tech-tag {
+            color: #ff8a8a;
+            font-weight: 500;
+        }
+        
+        /* Final block special styling */
+        .story-block.finale {
+            background: linear-gradient(135deg, rgba(220, 53, 69, 0.08) 0%, #0f0f0f 100%);
+            border-color: rgba(220, 53, 69, 0.25);
+        }
+        
+        /* Side Navigation */
+        .side-nav {
+            position: fixed;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+        .side-nav a {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 10px 14px;
+            background: rgba(15, 15, 15, 0.95);
+            border: 1px solid #1a1a1a;
+            border-radius: 8px;
+            color: #888;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+        .side-nav a:hover {
+            background: #1a1a1a;
+            color: #fff;
+            border-color: #333;
+            transform: translateX(5px);
+        }
+        .side-nav a.active {
+            background: linear-gradient(135deg, #dc3545, #ff6b6b);
+            color: #fff;
+            border-color: #dc3545;
+        }
+        .side-nav .nav-dot {
+            width: 8px;
+            height: 8px;
+            background: currentColor;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+        .side-nav a.active .nav-dot {
+            background: #fff;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        }
+        .side-nav .nav-label {
+            opacity: 0;
+            max-width: 0;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .side-nav:hover .nav-label {
+            opacity: 1;
+            max-width: 150px;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .journey-header h1 {
+                font-size: 2rem;
+            }
+            .timeline::before {
+                left: 20px;
+            }
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 0;
+            }
+            .timeline-item:nth-child(even) {
+                margin-left: 0;
+                padding-left: 50px;
+            }
+            .timeline-item::after {
+                left: 12px;
+                right: auto;
+            }
+            .timeline-item:nth-child(even)::after {
+                left: 12px;
+            }
+            .arch-grid {
+                grid-template-columns: 1fr;
+            }
+            .story-block {
+                padding: 20px;
+            }
+            .story-header {
+                gap: 12px;
+            }
+            .story-chapter {
+                width: 40px;
+                height: 40px;
+                font-size: 1rem;
+            }
+            .story-meta h4 {
+                font-size: 1.1rem;
+            }
+            .story-text {
+                padding-left: 52px;
+            }
+            .lead-text {
+                font-size: 1.1rem;
+            }
+            .story-intro {
+                padding: 25px 20px;
+            }
+            .side-nav {
+                display: none;
+            }
+        }
+        @media (max-width: 1200px) {
+            .side-nav {
+                left: 15px;
+            }
+            .side-nav .nav-label {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Side Navigation -->
+    <nav class="side-nav">
+        <a href="#story" class="active">
+            <span class="nav-dot"></span>
+            <span class="nav-label">My Story</span>
+        </a>
+        <a href="#chapter1">
+            <span class="nav-dot"></span>
+            <span class="nav-label">What I Do</span>
+        </a>
+        <a href="#chapter2">
+            <span class="nav-dot"></span>
+            <span class="nav-label">The Beginning</span>
+        </a>
+        <a href="#chapter3">
+            <span class="nav-dot"></span>
+            <span class="nav-label">First Role</span>
+        </a>
+        <a href="#chapter4">
+            <span class="nav-dot"></span>
+            <span class="nav-label">Graduate Studies</span>
+        </a>
+        <a href="#chapter5">
+            <span class="nav-dot"></span>
+            <span class="nav-label">Current Focus</span>
+        </a>
+        <a href="#vision">
+            <span class="nav-dot"></span>
+            <span class="nav-label">The Vision</span>
+        </a>
+        <a href="#architecture">
+            <span class="nav-dot"></span>
+            <span class="nav-label">Architecture</span>
+        </a>
+        <a href="#insights">
+            <span class="nav-dot"></span>
+            <span class="nav-label">Insights</span>
+        </a>
+    </nav>
+
+    <!-- Header -->
+    <header class="journey-header">
+        <div class="container">
+            <a href="index.html" class="back-link">
+                <i class="ti-arrow-left"></i> Back to Portfolio
+            </a>
+            <h1> Journey & <span class="text-danger">Architecture</span></h1>
+            <p class="subtitle">Exploring data architectures, system designs, and the experiences that shaped my path in engineering.</p>
+        </div>
+    </header>
+
+    <!-- My Story Section -->
+    <section class="story-section" id="story">
+        <div class="container">
+            <h2 class="section-title">My Story</h2>
+            
+            <div class="story-content">
+                <div class="story-intro">
+                    <p class="lead-text">I'm <span class="highlight">Shoukath Ali</span>, currently working as a <span class="highlight">Data Engineer</span>, with a <strong>Master's in Data Science</strong> from <span class="highlight">Indiana University Bloomington</span> and a <strong>Bachelor's in Computer Science</strong> from <span class="highlight">NIT Patna</span>.</p>
+                </div>
+                
+                <div class="story-timeline">
+                    <div class="story-block" id="chapter1">
+                        <div class="story-header">
+                            <div class="story-chapter"><i class="ti-target"></i></div>
+                            <div class="story-meta">
+                                <div class="story-number">Chapter 01</div>
+                                <h4>What I Do</h4>
+                            </div>
+                        </div>
+                        <div class="story-text">
+                            <p>I specialize in building <strong>scalable, end-to-end data pipelines</strong>, where I take <strong>complete ownership</strong> — from understanding business requirements to designing, optimizing, and maintaining production-grade systems. My work focuses heavily on <span class="tech-tag">performance optimization</span>, <span class="tech-tag">data quality</span>, and <span class="tech-tag">cost-efficient data modeling</span>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-block" id="chapter2">
+                        <div class="story-header">
+                            <div class="story-chapter"><i class="ti-flag-alt"></i></div>
+                            <div class="story-meta">
+                                <div class="story-number">Chapter 02</div>
+                                <h4>Where It All Started</h4>
+                            </div>
+                        </div>
+                        <div class="story-text">
+                            <p>My journey started during my <strong>bachelor's degree</strong>, where I began as a <strong>Software Engineering intern</strong>, working extensively with <span class="tech-tag">DBMS concepts</span>, <span class="tech-tag">SQL queries</span>, and <span class="tech-tag">query optimization</span>. That experience sparked my curiosity about <strong>how data systems work under the hood</strong>, which gradually pulled me deeper into databases and large-scale data systems.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-block" id="chapter3">
+                        <div class="story-header">
+                            <div class="story-chapter"><i class="ti-briefcase"></i></div>
+                            <div class="story-meta">
+                                <div class="story-number">Chapter 03</div>
+                                <h4>First Full-Time Role</h4>
+                            </div>
+                        </div>
+                        <div class="story-text">
+                            <p>In my first full-time role, I worked closely with <strong>business stakeholders</strong> to solve real operational problems. One of my early projects was a <strong>data science–driven platform</strong>, where I handled the <strong>entire lifecycle</strong> — <span class="tech-tag">ETL</span>, <span class="tech-tag">EDA</span>, <span class="tech-tag">machine learning</span>, <span class="tech-tag">analytics</span>, and <span class="tech-tag">reporting</span>. That project solidified my interest in <strong>data science and data engineering</strong>, motivating me to pursue my master's degree.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-block" id="chapter4">
+                        <div class="story-header">
+                            <div class="story-chapter"><i class="ti-medall"></i></div>
+                            <div class="story-meta">
+                                <div class="story-number">Chapter 04</div>
+                                <h4>Graduate Studies & Growth</h4>
+                            </div>
+                        </div>
+                        <div class="story-text">
+                            <p>During my master's, I explored multiple subdomains including <span class="tech-tag">analytics</span>, <span class="tech-tag">cloud platforms</span>, and <span class="tech-tag">big data systems</span>, continuously upskilling despite the challenges. After graduating, I joined an organization with a <strong>real-world business problem</strong> and proposed an <strong>end-to-end data platform solution</strong>. The platform I built improved operational efficiency by around <span class="metric">40%</span> and reduced manual whiteboarding efforts by nearly <span class="metric">70%</span>, and it became widely adopted across the organization.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-block" id="chapter5">
+                        <div class="story-header">
+                            <div class="story-chapter"><i class="ti-cloud"></i></div>
+                            <div class="story-meta">
+                                <div class="story-number">Chapter 05</div>
+                                <h4>Current Focus</h4>
+                            </div>
+                        </div>
+                        <div class="story-text">
+                            <p>Currently, I'm working full time on designing <strong>cloud-based data pipelines</strong> for <strong>intelligent automation systems</strong>, implementing <span class="tech-tag">data quality checks</span>, <span class="tech-tag">performance tuning</span>, and <span class="tech-tag">scalable architectures</span>. Alongside strong data engineering fundamentals, I also have solid exposure to <strong>AI and machine learning</strong>, including <span class="tech-tag">anomaly detection</span>, <span class="tech-tag">predictive maintenance</span>, and <strong>Generative AI</strong> concepts like <span class="tech-tag">RAG</span> and <span class="tech-tag">LLM-based systems</span>.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="story-block finale" id="vision">
+                        <div class="story-header">
+                            <div class="story-chapter"><i class="ti-heart"></i></div>
+                            <div class="story-meta">
+                                <div class="story-number">The Vision</div>
+                                <h4>What Drives Me</h4>
+                            </div>
+                        </div>
+                        <div class="story-text">
+                            <p>I enjoy collaborating closely with <strong>product and business teams</strong> to translate complex data into <strong>reliable insights</strong>, and I'm particularly interested in roles where <span class="tech-tag">data engineering</span>, <span class="tech-tag">analytics</span>, and <span class="tech-tag">AI</span> intersect.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Architecture Discussions -->
+    <section class="architecture-section" id="architecture">
+        <div class="container">
+            <h2 class="section-title">Architecture Discussions</h2>
+            
+            <div class="arch-grid">
+                <div class="arch-card">
+                    <div class="arch-icon">
+                        <i class="ti-layers"></i>
+                    </div>
+                    <h3>Lakehouse Architecture</h3>
+                    <p>Combining the best of data lakes and data warehouses. Building unified platforms with Delta Lake for ACID transactions, schema enforcement, and time travel capabilities.</p>
+                    <div class="arch-tags">
+                        <span class="arch-tag">Delta Lake</span>
+                        <span class="arch-tag">Databricks</span>
+                        <span class="arch-tag">Spark</span>
+                    </div>
+                </div>
+                
+                <div class="arch-card">
+                    <div class="arch-icon">
+                        <i class="ti-cloud"></i>
+                    </div>
+                    <h3>Cloud-Native Data Pipelines</h3>
+                    <p>Designing event-driven, serverless data pipelines that scale automatically. Leveraging managed services for cost efficiency and operational simplicity.</p>
+                    <div class="arch-tags">
+                        <span class="arch-tag">AWS</span>
+                        <span class="arch-tag">Airflow</span>
+                        <span class="arch-tag">Kafka</span>
+                    </div>
+                </div>
+                
+                <div class="arch-card">
+                    <div class="arch-icon">
+                        <i class="ti-wand"></i>
+                    </div>
+                    <h3>RAG & LLM Systems</h3>
+                    <p>Building Retrieval-Augmented Generation pipelines with vector databases. Designing production-ready AI systems with proper evaluation and monitoring.</p>
+                    <div class="arch-tags">
+                        <span class="arch-tag">LangChain</span>
+                        <span class="arch-tag">Pinecone</span>
+                        <span class="arch-tag">OpenAI</span>
+                    </div>
+                </div>
+                
+                <div class="arch-card">
+                    <div class="arch-icon">
+                        <i class="ti-stats-up"></i>
+                    </div>
+                    <h3>Real-Time Analytics</h3>
+                    <p>Stream processing architectures for real-time insights. Implementing Lambda and Kappa architectures for different use cases and latency requirements.</p>
+                    <div class="arch-tags">
+                        <span class="arch-tag">Kafka</span>
+                        <span class="arch-tag">Spark Streaming</span>
+                        <span class="arch-tag">Flink</span>
+                    </div>
+                </div>
+                
+                <div class="arch-card">
+                    <div class="arch-icon">
+                        <i class="ti-package"></i>
+                    </div>
+                    <h3>Data Mesh Principles</h3>
+                    <p>Decentralized data ownership with domain-oriented design. Implementing self-serve data infrastructure and federated governance models.</p>
+                    <div class="arch-tags">
+                        <span class="arch-tag">Domain Driven</span>
+                        <span class="arch-tag">Data Products</span>
+                        <span class="arch-tag">Governance</span>
+                    </div>
+                </div>
+                
+                <div class="arch-card">
+                    <div class="arch-icon">
+                        <i class="ti-reload"></i>
+                    </div>
+                    <h3>MLOps & Model Serving</h3>
+                    <p>End-to-end ML lifecycle management. From feature stores to model registries, deploying and monitoring ML models at scale.</p>
+                    <div class="arch-tags">
+                        <span class="arch-tag">MLflow</span>
+                        <span class="arch-tag">Feature Store</span>
+                        <span class="arch-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Insights Section -->
+    <section class="insights-section" id="insights">
+        <div class="container">
+            <h2 class="section-title">Thoughts & Insights</h2>
+            
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="insight-card">
+                        <i class="ti-quote-right quote-icon"></i>
+                        <h3>On Building Data Systems</h3>
+                        <p>The best data architecture is one that evolves with your business. Start simple, measure everything, and let real requirements guide complexity. Premature optimization in data systems often leads to unmaintainable pipelines.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="insight-card">
+                        <i class="ti-quote-right quote-icon"></i>
+                        <h3>On AI Integration</h3>
+                        <p>AI/ML should augment human decision-making, not replace it. The most successful implementations I've seen focus on clear problem definition first, then choosing the right tools—not the other way around.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Let's Discuss Architecture</h2>
+            <p>Interested in diving deeper into any of these topics? I'm always happy to discuss data architecture and engineering challenges.</p>
+            <a href="mailto:tech@shoukath.me" class="btn btn-danger btn-lg">Get In Touch</a>
+            <a href="https://medium.com/@heyshoukath" class="btn btn-outline-light btn-lg ml-3" target="_blank">Read My Blog</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="journey-footer">
+        <div class="container">
+            <p>&copy; 2025 Shoukath Ali. <a href="index.html">Back to Portfolio</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+    <script>
+        // Smooth scrolling for side nav
+        document.querySelectorAll('.side-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Active state on scroll
+        const sections = document.querySelectorAll('[id]');
+        const navLinks = document.querySelectorAll('.side-nav a');
+        
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 150;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
